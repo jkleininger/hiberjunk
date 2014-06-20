@@ -1,6 +1,5 @@
-package net.qrab.mycat;
+package net.qrab.hiberjunk;
 
-import static net.qrab.mycat.Hiberjunk.dburl;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -13,9 +12,10 @@ public class Common {
   private static final SessionFactory sessionFactory;
 
   static {
-      config.setProperty("hibernate.connection.url", dburl);
+      config.setProperty("hibernate.connection.url", Hiberjunk.dburl);
       config.addPackage("net.qrab.mycat");
       config.addAnnotatedClass(Person.class);
+      config.addAnnotatedClass(Vendor.class);
       config.configure();
       sessionFactory = config.buildSessionFactory();
   }

@@ -1,4 +1,4 @@
-package net.qrab.mycat;
+package net.qrab.hiberjunk;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,7 +11,7 @@ import org.hibernate.Session;
 
 public class Hiberjunk {
 
-  static final String dburl = "jdbc:derby:db1.poo";
+  static final String dburl = "jdbc:derby:/tmp/db1.poo";
 
   static JFrame theFrame = new JFrame("myCat");
   static JPanel content;

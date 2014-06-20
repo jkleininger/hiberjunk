@@ -1,4 +1,4 @@
-package net.qrab.mycat;
+package net.qrab.hiberjunk;
 
 import java.io.Serializable;
 import javax.persistence.Column;
